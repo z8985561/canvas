@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>02-使用样式和颜色</title>
+</head>
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <script>
+    let canvas = document.querySelector('#canvas');
+    let context = canvas.getContext('2d');
+    //设置矩形的填充颜色
+    context.fillStyle='rgba(255,200,20,1)';
+    context.fillRect(0,0,200,200);
+    //设置矩形的填充颜色
+    context.fillStyle='rgba(255,150,20,1)';
+    context.fillRect(0,200,200,200);
+
+    //设置矩形边线的颜色
+    context.strokeStyle='blue';
+    context.strokeRect(205, 0, 200, 200);
+
+
+    //globalAlpha 示例
+
+    // 绘制背景
+    context.fillStyle = "yellow";
+    context.fillRect(200,200,100,100)
+    context.fillStyle = "green";
+    context.fillRect(300,200,100,100)
+    context.fillStyle = "blue";
+    context.fillRect(200,300,100,100)
+    context.fillStyle = "red";
+    context.fillRect(300,300,100,100)
+    context.fillStyle = '#FFF';
+     // 设置透明度值
+    context.globalAlpha=0.2;
+    // 画半透明圆
+    for (var i=0;i<7;i++){
+        context.beginPath();
+        context.arc(300,300,10+10*i,0,Math.PI*2,true);
+        context.fill();
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>06-合成与裁剪</title>
+</head>
+<body>
+  <canvas id="c" width="1069" height="1069" style="border:1px solid #aaa"></canvas>
+  <script src="./lib/fabric.min.js"></script>
+  <script>
+
+      let template = {
+            "objects":[
+                {
+                    "type":"image",
+                    "originX":"center",
+                    "originY":"center",
+                    "left":210,
+                    "top":341,
+                    "width":787.05,
+                    "height":544.8,
+                    "fill":"rgb(0,0,0)",
+                    "stroke":null,
+                    "strokeWidth":1,
+                    "strokeDashArray":null,
+                    "strokeLineCap":"butt",
+                    "strokeLineJoin":"miter",
+                    "strokeMiterLimit":10,
+                    "scaleX":1,
+                    "scaleY":1,
+                    "angle":0,
+                    "flipX":false,
+                    "flipY":false,
+                    "opacity":1,
+                    "shadow":null,
+                    "visible":true,
+                    "clipTo":null,
+                    "backgroundColor":"",
+                    "fillRule":"nonzero",
+                    "globalCompositeOperation":"source-over",
+                    "src":"https://www.bespoke7.shop/wp-content/uploads/2018/12/Inner-calm.jpg",
+                    "filters":[
+
+                    ],
+                    "crossOrigin":"",
+                    "alignX":"none",
+                    "alignY":"none",
+                    "meetOrSlice":"meet"
+                },
+                {
+                    "type":"image",
+                    "originX":"center",
+                    "originY":"center",
+                    "left":1080,
+                    "top":575,
+                    "width":885.74,
+                    "height":544.8,
+                    "fill":"rgb(0,0,0)",
+                    "stroke":null,
+                    "strokeWidth":1,
+                    "strokeDashArray":null,
+                    "strokeLineCap":"butt",
+                    "strokeLineJoin":"miter",
+                    "strokeMiterLimit":10,
+                    "scaleX":1,
+                    "scaleY":1,
+                    "angle":0,
+                    "flipX":false,
+                    "flipY":false,
+                    "opacity":1,
+                    "shadow":null,
+                    "visible":true,
+                    "clipTo":null,
+                    "backgroundColor":"",
+                    "fillRule":"nonzero",
+                    "globalCompositeOperation":"source-over",
+                    "src":"https://www.bespoke7.shop/wp-content/uploads/2018/12/inner-peace.jpg",
+                    "filters":[
+
+                    ],
+                    "crossOrigin":"",
+                    "alignX":"none",
+                    "alignY":"none",
+                    "meetOrSlice":"meet"
+                },
+                {
+                    "type":"image",
+                    "originX":"center",
+                    "originY":"center",
+                    "left":1080,
+                    "top":575,
+                    "width":885.74,
+                    "height":544.8,
+                    "fill":"rgb(0,0,0)",
+                    "stroke":null,
+                    "strokeWidth":1,
+                    "strokeDashArray":null,
+                    "strokeLineCap":"butt",
+                    "strokeLineJoin":"miter",
+                    "strokeMiterLimit":10,
+                    "scaleX":1,
+                    "scaleY":1,
+                    "angle":0,
+                    "flipX":false,
+                    "flipY":false,
+                    "opacity":1,
+                    "shadow":null,
+                    "visible":true,
+                    "clipTo":null,
+                    "backgroundColor":"",
+                    "fillRule":"nonzero",
+                    "globalCompositeOperation":"source-over",
+                    "src":"https://www.bespoke7.shop/wp-content/uploads/2018/12/inner-peace.jpg",
+                    "filters":[
+
+                    ],
+                    "crossOrigin":"",
+                    "alignX":"none",
+                    "alignY":"none",
+                    "meetOrSlice":"meet"
+                }
+            ],
+            "background":"rgb(255, 255, 255)",
+            "overlayImage":{
+                "type":"image",
+                "originX":"left",
+                "originY":"top",
+                "left":0,
+                "top":0,
+                "width":1069,
+                "height":1069,
+                "fill":"rgb(0,0,0)",
+                "stroke":null,
+                "strokeWidth":1,
+                "strokeDashArray":null,
+                "strokeLineCap":"butt",
+                "strokeLineJoin":"miter",
+                "strokeMiterLimit":10,
+                "scaleX":1,
+                "scaleY":1,
+                "angle":0,
+                "flipX":false,
+                "flipY":false,
+                "opacity":1,
+                "shadow":null,
+                "visible":true,
+                "clipTo":null,
+                "backgroundColor":"",
+                "fillRule":"nonzero",
+                "globalCompositeOperation":"source-over",
+                "src":"https://www.bespoke7.shop/wp-content/uploads/b7products/a02/a02_g20_layout_mask_design.png",
+                "filters":[
+
+                ],
+                "crossOrigin":"",
+                "alignX":"none",
+                "alignY":"none",
+                "meetOrSlice":"meet"
+            }
+        };
+    const canvas = this.__canvas = new fabric.Canvas('c');
+    canvas.loadFromJSON(template);
+    canvas.renderAll();
+  </script>
+
+</body>
+</html>
